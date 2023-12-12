@@ -6,3 +6,7 @@ results:
 734
 
 -2 SELECT COUNT(`name`),`office_address`  FROM `teachers` GROUP BY `office_address`;
+
+-3 SELECT AVG(`vote`),`exam_id` FROM `exam_student` GROUP BY `exam_id`;
+
+-4 SELECT `department_id`, COUNT(`id`) AS numero_corsi_laurea FROM `degrees` GROUP BY `department_id`;
