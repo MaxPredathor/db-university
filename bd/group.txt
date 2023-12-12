@@ -1,0 +1,7 @@
+-1 SELECT COUNT(`enrolment_date`) FROM `students` GROUP BY YEAR(`enrolment_date`); 
+results:
+912
+1709
+1645
+734
+
