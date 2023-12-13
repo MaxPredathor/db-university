@@ -3,3 +3,10 @@ SELECT `degrees`.`name` AS `nome_corso`, `students`.*
 FROM `degrees`
 JOIN `students` ON `students`.`degree_id` = `degrees`.`id`
 WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
+
+2-
+SELECT `departments`.`name` AS `nome`, `degrees`.*
+FROM `degrees` 
+JOIN `departments` ON `departments`.`id` = `degrees`.`department_id`
+WHERE `departments`.`name` = 'Dipartimento di Neuroscienze' && `degrees`.`level` = 'magistrale'
+
